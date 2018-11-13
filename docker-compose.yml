@@ -1,0 +1,15 @@
+version: "3.6"
+services:
+    app:
+        build: ./docker/aspnetapp
+        #restart: always
+        container_name: kestrel_new  
+
+    proxy:
+        build: ./docker/nginx
+        ports:
+          - "80:80"
+        depends_on:
+          - app
+        #restart: always
+        container_name: nginx_new        
