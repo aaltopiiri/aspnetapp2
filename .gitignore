@@ -1,26 +1,41 @@
-# Build output
-[Bb]in/
+# Autosave files
+*~
+
+# build
 [Oo]bj/
-[Oo]ut/
+[Bb]in/
+packages/
+TestResults/
 
-# cache for misc downloads
-artifacts/
-
-# dotnet install directory
-.dotnet/
-
- # Visual Studio 2015 cache/options directory
+# globs
+Makefile.in
+*.DS_Store
+*.sln.cache
+*.suo
+*.cache
+*.pidb
+*.userprefs
+*.usertasks
+config.log
+config.make
+config.status
+aclocal.m4
+install-sh
+autom4te.cache/
+*.user
+*.tar.gz
+tarballs/
+test-results/
+Thumbs.db
 .vs/
 
-# Visual Studio Code cache/options directory
-.vscode/
+# Mac bundle stuff
+*.dmg
+*.app
 
-# Visual Studio debug profile
-**/launchSettings.json
+# resharper
+*_Resharper.*
+*.Resharper
 
-# Test files
-*.trx
-
-# User-specific files
-*.suo
-*.user
+# dotCover
+*.dotCover
